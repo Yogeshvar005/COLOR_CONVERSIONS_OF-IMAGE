@@ -36,8 +36,8 @@ Split and Merge RGB Image
 Split and merge HSV Image
 
 ##### Program:
-### Developed By:
-### Register Number: 
+### Developed By: Yogeshvar.M
+### Register Number: 212222230180
 
 
 ## Output:
@@ -52,7 +52,7 @@ Split and merge HSV Image
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ```
-![1,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/15d1fe9d-a680-434d-b597-ea66936d34d2)
+![1,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/25408c3d-e817-4cc5-8dae-430e6500b5ad)
 
 ![1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/9c73c661-37e5-4b2e-927a-de19bb1d13b3)
 
@@ -91,7 +91,7 @@ import random
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ```
-![4,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/eb2afb8f-63b2-4796-88db-c54ae4102320)
+![4,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/35fd63af-0fe4-40f2-9b2e-29d93f2faf8d)
 
 ![4](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/f6ac6cfa-9968-484f-b960-2c1f06d16f0f)
 
@@ -104,12 +104,12 @@ import random
   image=cv2.resize(image,(300,300))
   tag =image[150:200,110:160]
   image[110:160,150:200] = tag
-  cv2.imshow('image1',image)
+  cv2.imshow('yogi',image)
   cv2.waitKey(0)
   cv2.destroyAllWindows()
 ```
 
-![5](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/24074d0b-ad23-480f-9036-5c166e503f75)
+![5](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/6ce7b37a-cc1d-42bf-b262-13dc9a4083f3)
 
 ![5,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/facd39f0-1d29-43ce-a0fb-a3b8469bfd35)
 
