@@ -40,7 +40,7 @@ Split and merge HSV Image
 #### Register Number: 212222230180
 
 
-### Output:
+## Output:
 
 ### i) Read and display the image
 
