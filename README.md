@@ -51,7 +51,6 @@ Split and merge HSV Image
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ```
-![1,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/25408c3d-e817-4cc5-8dae-430e6500b5ad)
 
 ![1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/9c73c661-37e5-4b2e-927a-de19bb1d13b3)
 
@@ -87,7 +86,6 @@ import random
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ```
-![4,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/35fd63af-0fe4-40f2-9b2e-29d93f2faf8d)
 
 ![4](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/f6ac6cfa-9968-484f-b960-2c1f06d16f0f)
 
@@ -102,7 +100,6 @@ import random
   cv2.destroyAllWindows()
 ```
 
-![5](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/6ce7b37a-cc1d-42bf-b262-13dc9a4083f3)
 
 ![5,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/facd39f0-1d29-43ce-a0fb-a3b8469bfd35)
 
@@ -127,7 +124,6 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![6,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/3dab3594-1706-4569-97c6-de2f9a27290f)
 
 ![6](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/5a970b7f-263b-4ef0-8e8c-186bc7d5d725)
 
@@ -147,7 +143,6 @@ cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![7,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/db2cc7ef-6d5b-49ca-a18b-65369e55f284)
 
 ![7](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/b7fbe4db-3c21-4855-87a2-cbd309cc67ab)
 
@@ -166,7 +161,6 @@ cv2.imshow('BGR-2-YCrCb',YCrCb2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![8](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/2a94ab38-84c3-4b73-8ac7-6c9a6f544603)
 
 ![8,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/3d295ea6-f6f8-4a40-9855-9d714cf1b0ed)
 
@@ -187,7 +181,6 @@ cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![9,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/2d600ab5-0304-4181-b2ae-297d488f5bb7)
 
 ![9](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/1a047d92-11e0-4c2f-9172-77fde0b60b79)
 
@@ -207,7 +200,6 @@ cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![10](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/530f8e77-6db6-4fc4-a5ea-1e39bef32a1a)
 
 ![10,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/d93b352f-7a52-406c-a2a6-47c91616c1ce)
 
