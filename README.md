@@ -64,19 +64,13 @@ Split and merge HSV Image
 ### iii)Shape of the Image
 
 ```python
-    image=cv2.imread('bird.jpg',1)
     print(image.shape)
 ```
-![3](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/c1935940-6e94-4b50-9918-f1e001a34884)
-
 
 ### iv)Access rows and columns
 
 ```python
 import random
-    import cv2
-    image=cv2.imread('bird.jpg',1)
-    image=cv2.resize(image,(500,500))
     for i in range (250,500):
       for j in range(image.shape[1]):
           image[i][j]=[random.randint(0,255),
