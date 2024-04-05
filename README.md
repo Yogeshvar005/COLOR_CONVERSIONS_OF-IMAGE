@@ -47,7 +47,6 @@ Split and merge HSV Image
 ```python
     import cv2
     image=cv2.imread('bird.jpg',1)
-    image=cv2.resize(image,(300,300))
     cv2.imshow('yogi',image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
@@ -59,8 +58,6 @@ Split and merge HSV Image
 ### ii)Write the image
 
 ```python
-    import cv2
-    image=cv2.imread('bird.jpg',0)
     cv2.imwrite('demos.jpg',image)
 ```
 ![2](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/904ec4b0-5dbb-484a-bf33-92b917b0128f)
@@ -68,7 +65,6 @@ Split and merge HSV Image
 ### iii)Shape of the Image
 
 ```python
-    import cv2
     image=cv2.imread('bird.jpg',1)
     print(image.shape)
 ```
@@ -99,9 +95,6 @@ import random
 ### v)Cut and paste portion of image
 
 ```python
-  import cv2
-  image=cv2.imread('bird.jpg',1)
-  image=cv2.resize(image,(300,300))
   tag =image[150:200,110:160]
   image[110:160,150:200] = tag
   cv2.imshow('yogi',image)
@@ -116,9 +109,6 @@ import random
 ### vi) BGR and RGB to HSV and GRAY
 
 ```python
-import cv2
-img = cv2.imread('bird.jpg',1)
-img = cv2.resize(img,(200,200))
 cv2.imshow('Original Image',img)
 
 hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -145,10 +135,6 @@ cv2.destroyAllWindows()
 ### vii) HSV to RGB and BGR
 
 ```python
-import cv2
-img = cv2.imread('bird.jpg')
-img = cv2.resize(img,(200,200))
-
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 cv2.imshow('Original HSV Image',img)
 
@@ -169,9 +155,6 @@ cv2.destroyAllWindows()
 ### viii) RGB and BGR to YCrCb
 
 ```python
-import cv2
-img = cv2.imread('bird.jpg')
-img = cv2.resize(img,(200,200))
 cv2.imshow('Original RGB Image',img)
 
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -190,10 +173,6 @@ cv2.destroyAllWindows()
 
 ### ix) Split and merge RGB Image
 ```python
-import cv2
-img = cv2.imread('bird.jpg',1)
-img = cv2.resize(img,(200,200))
-
 R = img[:,:,2]
 G = img[:,:,1]
 B = img[:,:,0]
@@ -214,9 +193,6 @@ cv2.destroyAllWindows()
 
 ### x) Split and merge HSV Image
 ```python
-import cv2
-img = cv2.imread("bird.jpg",1)
-img = cv2.resize(img,(200,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
 H,S,V=cv2.split(img)
