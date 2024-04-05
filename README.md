@@ -59,7 +59,6 @@ Split and merge HSV Image
 ```python
     cv2.imwrite('demos.jpg',image)
 ```
-![2](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/904ec4b0-5dbb-484a-bf33-92b917b0128f)
 
 ### iii)Shape of the Image
 
