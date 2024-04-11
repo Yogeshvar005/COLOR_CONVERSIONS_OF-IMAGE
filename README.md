@@ -45,31 +45,40 @@ Split and merge HSV Image
 ### i) Read and display the image
 
 ```python
-    import cv2
-    image=cv2.imread('bird.jpg',1)
-    cv2.imshow('yogi',image)
+     import cv2
+    image=cv2.imread('pass.jpg',1)
+    image=cv2.resize(image,(300,300))
+    cv2.imshow('Yogi',image)
     cv2.waitKey(0)
-    cv2.destroyAllWindows()
-```
+    cv2.destroyAllWindows() 
 
-![1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/9c73c661-37e5-4b2e-927a-de19bb1d13b3)
+```
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/3d1cf8eb-8206-4e84-94ed-d8abc8c07554)
+
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/29a97cf3-5116-400b-a772-9a23aebe2549)
 
 ### ii)Write the image
 
 ```python
+   image=cv2.imread('pass.jpg',0)
     cv2.imwrite('demos.jpg',image)
 ```
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/7599ed25-96a7-4092-9071-b3061a564cd8)
 
 ### iii)Shape of the Image
 
 ```python
+    image=cv2.imread('pass.jpg',1)
     print(image.shape)
 ```
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/688c1870-69fe-4f41-b57e-0e8b3a8e6464)
 
 ### iv)Access rows and columns
 
 ```python
 import random
+    image=cv2.imread('pass.jpg',1)
+    image=cv2.resize(image,(500,500))
     for i in range (250,500):
       for j in range(image.shape[1]):
           image[i][j]=[random.randint(0,255),
@@ -79,51 +88,61 @@ import random
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ```
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/dd0ae5b6-86c1-48c8-854f-007e35a4fb53)
 
-![4](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/f6ac6cfa-9968-484f-b960-2c1f06d16f0f)
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/510ae999-f782-4610-b071-5ff8394d5c88)
 
 
 ### v)Cut and paste portion of image
 
 ```python
-  tag =image[150:200,110:160]
-  image[110:160,150:200] = tag
-  cv2.imshow('yogi',image)
-  cv2.waitKey(0)
-  cv2.destroyAllWindows()
+    image=cv2.imread('pass.jpg',1)
+    image=cv2.resize(image,(300,300))
+    tag =image[150:200,110:160]
+    image[110:160,150:200] = tag
+    cv2.imshow('image1',image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 ```
 
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/daf8f1bd-b24d-45b3-935e-199c757d3a3a)
 
-![5,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/facd39f0-1d29-43ce-a0fb-a3b8469bfd35)
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/8724c02f-ee89-409e-a405-9000227c3c73)
 
 ### vi) BGR and RGB to HSV and GRAY
 
 ```python
-cv2.imshow('Original Image',img)
+    img = cv2.imread('pass.jpg',1)
+    img = cv2.resize(img,(200,200))
+    cv2.imshow('Original Image',img)
 
-hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
-cv2.imshow('BGR2HSV',hsv1)
+    hsv1 = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+    cv2.imshow('BGR2HSV',hsv1)
 
-hsv2 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
-cv2.imshow('RGB2HSV',hsv2)
-
-gray1 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-cv2.imshow('BGR2GRAY',gray1)
-
-gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
-cv2.imshow('RGB2GRAY',gray2)
-
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+    hsv2 = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+    cv2.imshow('RGB2HSV',hsv2)
+    
+    gray1 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    cv2.imshow('BGR2GRAY',gray1)
+    
+    gray2 = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+    cv2.imshow('RGB2GRAY',gray2)
+    
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 ```
 
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/a4f0d771-3292-48d4-adfd-e28aa5774a48)
 
-![6](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/5a970b7f-263b-4ef0-8e8c-186bc7d5d725)
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/75ecf890-a3ac-4b45-a559-c0c7c81af2bb)
 
 
 ### vii) HSV to RGB and BGR
 
 ```python
+img = cv2.imread('pass.jpg')
+img = cv2.resize(img,(200,200))
+
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 cv2.imshow('Original HSV Image',img)
 
@@ -136,13 +155,16 @@ cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/6ab89956-2220-4c39-9b00-6652f121e04a)
 
-![7](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/b7fbe4db-3c21-4855-87a2-cbd309cc67ab)
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/0bcd17b4-3794-4153-9c39-25bb6d251f3c)
 
 
 ### viii) RGB and BGR to YCrCb
 
 ```python
+img = cv2.imread('pass.jpg')
+img = cv2.resize(img,(200,200))
 cv2.imshow('Original RGB Image',img)
 
 YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -154,12 +176,16 @@ cv2.imshow('BGR-2-YCrCb',YCrCb2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/7e02f573-250b-417e-89d3-24a8dbc8d05e)
 
-![8,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/3d295ea6-f6f8-4a40-9855-9d714cf1b0ed)
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/56a06dab-07ce-4188-a89d-4babfeecaf8a)
 
 
 ### ix) Split and merge RGB Image
 ```python
+img = cv2.imread('pass.jpg',1)
+img = cv2.resize(img,(200,200))
+
 R = img[:,:,2]
 G = img[:,:,1]
 B = img[:,:,0]
@@ -174,11 +200,14 @@ cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/9b67b1d9-33a3-4e93-aed9-6ccb7dbbe656)
 
-![9](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/1a047d92-11e0-4c2f-9172-77fde0b60b79)
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/f0f19574-d0af-4c66-a490-dbe7d833d2af)
 
 ### x) Split and merge HSV Image
 ```python
+img = cv2.imread("pass.jpg",1)
+img = cv2.resize(img,(200,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
 H,S,V=cv2.split(img)
@@ -193,8 +222,9 @@ cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/38520ae8-c43b-4faa-9bf7-db303eb1fe8d)
 
-![10,1](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/d93b352f-7a52-406c-a2a6-47c91616c1ce)
+![image](https://github.com/Yogeshvar005/COLOR_CONVERSIONS_OF-IMAGE/assets/113497367/fdfba9d4-2406-4910-b416-f0644513413f)
 
 
 ## Result:
